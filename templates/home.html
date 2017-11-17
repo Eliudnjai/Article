@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <div class="Jumbotron text-center">
+        <h2>Boston Children Hospital Storage</h2>
+   
+    <p class="lead">This is the storage web for most of our devices.instructions are simple,add,remove,move and delete.
+    </p>
+    {% if session.logged_in==NULL %}
+        <a href="/register" class="btn btn-primary btn-lg">Register</a>
+        <a href="/login" class="btn btn-success btn-lg">Login</a>
+    {% endif %}
+    </div>
+
+{% endblock  %}
